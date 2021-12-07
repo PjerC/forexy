@@ -1,5 +1,12 @@
 .navBarStyle {
     position: fixed;
+    height:5vh;
+    width:100%;
     align-items: center;
-    background-color:rgb(227, 227, 238);
+    background-color:rgba(30, 30, 31,0.5);
+}
+.linkBtn {
+    margin: 1px 1px 1px 1px;
+    height: 80%;
+    background-color: cadetblue;
 }
