@@ -4,9 +4,7 @@ const NavBar = (props) => {
     return(
             <div className="navBarStyle">
                 <div style={{display:"flex",flexDirection:"row"}} >
-                    <a  className="linkBtn" target=""> btn1 </a>
-                    <a  className="linkBtn" target=""> btn1 </a>
-                    <a  className="linkBtn" target=""> btn1 </a>
+                    <button type="button" className="btn btn-primary"> btn </button>
                 </div>
             </div>
     )
