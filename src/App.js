@@ -1,12 +1,13 @@
-//import logo from './logo.svg';
 import './App.css';
 import NavBar from './NavBar.js'
+import DisplayModule from './DisplayModule.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <NavBar/>
+      <DisplayModule />
     </div>
   );
 }

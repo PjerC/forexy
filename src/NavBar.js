@@ -6,7 +6,7 @@ const NavBar = (props) => {
 return(
 
     <div>
-        <nav className="navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-dark bg-dark"> 
             <div className="container-fluid justify-content-evenly">
                 <button className="flex-fill btn btn-lg btn-outline-secondary m-2" type="button"> Strategie </button>
                 <button className="flex-fill btn btn-lg btn-outline-secondary m-2" type="button"> Materiały </button>
