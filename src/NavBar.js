@@ -10,9 +10,10 @@ const NavBar = (props) => {
 return(
     <div>
         <nav className="navbar navbar-dark border-bottom border-secondary"> 
-            <div className="container-fluid justify-content-evenly">
+
+                <NavBarLeftModule />
                 <NavBarCenterModule />
-            </div>
+                <NavBarRightModule />
         </nav>
     </div>
     )
