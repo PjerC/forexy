@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './NavBar.js'
 import DisplayModule from './DisplayModule.js'
+import Footer from './Footer.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <div className="App">
       <NavBar/>
       <DisplayModule />
+      <Footer />
     </div>
   );
 }
