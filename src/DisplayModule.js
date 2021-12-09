@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import DisplayUpperModule from './DisplayModules/DisplayUpperModule';
+import DisplayCenterModule from './DisplayModules/DisplayCenterModule';
+//import DisplayUpperModule from './DisplayModules/DisplayUpperModule';
 
 // centered module with nested components
-const DisplayModule = () => {
+const DisplayModule = (props) => {
     return(
-        <div>
-            <DisplayUpperModule />
+        <div  className="justify-content-center align-items-center" >
+             <DisplayCenterModule />
         </div>
         
     )
