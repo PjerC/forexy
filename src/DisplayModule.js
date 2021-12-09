@@ -4,9 +4,11 @@ import DisplayCenterModule from './DisplayModules/DisplayCenterModule';
 
 // centered module with nested components
 const DisplayModule = (props) => {
+    const {setVisibilityStrategy} = props;
+
     return(
-        <div  className="justify-content-center align-items-center" >
-             <DisplayCenterModule />
+        <div style={{height: "auto"}} className="align-items-center justify-content-center m-1" > 
+             <DisplayCenterModule  setVisibilityStrategy={setVisibilityStrategy}/>
         </div>
         
     )

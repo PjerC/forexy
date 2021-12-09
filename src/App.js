@@ -10,8 +10,8 @@ const App = (props) => {
   const {backgroundColor} = props;
 
   return (
-    <div style={{backgroundColor:backgroundColor}} className="App">
-      <NavBar/>
+    <div style={{backgroundColor:backgroundColor}} className="App justify-content-center items-align-center">
+      <NavBar />
       <DisplayModule />
       <Footer />
     </div>

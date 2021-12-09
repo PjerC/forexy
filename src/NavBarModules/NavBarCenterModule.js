@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './NavBarStyles.css';
 
 const NavBarCenterModule = (props) => {
+    
     return(
     
         <div>           
