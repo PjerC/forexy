@@ -1,7 +1,7 @@
 
 const Strategy = (props) => {
     return (
-        <div> strategy module </div>
+        <div className="m-2 border border-secondary"> strategy module </div>
     )
 }
 export default Strategy 
