@@ -8,7 +8,8 @@ const DisplayModule = (props) => {
     const {visibilityStrategy,setVisibilityStrategy} =props;
 
     return(
-        <div style={{height: "auto"}} className="align-items-center justify-content-center m-1" > 
+        <div className="flex-grow-1 w-100 align-self-center justify-content-center m-2 border border-warning" >
+            display module 
              <DisplayCenterModule  visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}/>
         </div>
         

@@ -10,10 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Main = (props) => {
   // initial states
-  const [backgroundColor] = useState('rgb(19,23,34)');
+  const [backgroundColor,setBackgroundColor] = useState('rgb(19,23,34)');
 
   return (
-    <App  backgroundColor={backgroundColor}/>
+    <App  backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />
   )
 }
 

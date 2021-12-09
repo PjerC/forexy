@@ -9,7 +9,7 @@ const DisplayCenterModule = (props) => {
     const showStrategyModule = () => {setVisibilityStrategy(true);}
 
     return(
-        <div  className="border border-secondary m-2"> 
+        <div className="justify-content-center align-items-center border border-primary m-2">  center module  
          { visibilityStrategy && <Strategy /> }
         </div>
     )

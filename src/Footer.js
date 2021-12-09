@@ -5,7 +5,7 @@ import './FooterModules/FooterStyles.css'
 const Footer = () => {
 
     return(
-        <div className="fixed-bottom border-top border-secondary"> 
+        <div  className="m-0 border-top border-secondary"> 
             <div className="container-fluid justify-content-evenly">
                 <button className="flex-fill btn btn-lg m-1 btnFooter" type="button"><i class="bi bi-envelope text-secondary"></i></button>
                 <button className="flex-fill btn btn-lg m-1 btnFooter" type="button"><i class="bi bi-linkedin text-secondary"></i></button>

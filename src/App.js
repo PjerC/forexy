@@ -9,11 +9,11 @@ const App = (props) => {
 
   const [visibilityStrategy,setVisibilityStrategy] = useState(false);
 
-  const {backgroundColor} = props;
+  const {backgroundColor,setBackgroundColor} = props;
 
   return (
-    <div style={{backgroundColor:backgroundColor}} className="App justify-content-center items-align-center">
-      <NavBar visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}/>
+    <div style={{backgroundColor:backgroundColor}} className="d-flex flex-column container-fluid App justify-content-center align-items-center">
+      <NavBar backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}/>
       <DisplayModule  visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}/>
       <Footer />
     </div>
