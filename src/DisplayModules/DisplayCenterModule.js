@@ -10,7 +10,6 @@ const DisplayCenterModule = (props) => {
 
     return(
         <div  className="border border-secondary m-2"> 
-         <button className="btn btn-primary m-2" type="button" onClick={showStrategyModule}> show </button>
          { visibilityStrategy && <Strategy /> }
         </div>
     )

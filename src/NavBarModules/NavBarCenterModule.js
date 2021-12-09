@@ -4,10 +4,10 @@ import './NavBarStyles.css';
 
 const NavBarCenterModule = (props) => {
     
-    const {setVisibilityStrategy} = props;
+    const {visibilityStrategy,setVisibilityStrategy} = props;
     const showStrategyModule = () => {
         console.log("clicked");
-        setVisibilityStrategy(true)
+        setVisibilityStrategy(!visibilityStrategy)
         
     }
     return(
