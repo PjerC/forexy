@@ -10,7 +10,6 @@ const NavBar = (props) => {
 return(
     <div>
         <nav className="navbar navbar-dark border-bottom border-secondary"> 
-
                 <NavBarLeftModule />
                 <NavBarCenterModule />
                 <NavBarRightModule />
