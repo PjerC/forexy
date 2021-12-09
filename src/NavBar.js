@@ -6,11 +6,13 @@ import NavBarRightModule from './NavBarModules/NavBarRightModule';
 
 const NavBar = (props) => {
 
+const {setVisibilityStrategy} = props;
+
 return(
     <div>
         <nav className="navbar navbar-dark border-bottom border-secondary"> 
                 <NavBarLeftModule />
-                <NavBarCenterModule />
+                <NavBarCenterModule setVisibilityStrategy={setVisibilityStrategy} />
                 <NavBarRightModule />
         </nav>
     </div>
