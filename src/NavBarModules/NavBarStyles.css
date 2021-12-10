@@ -1,4 +1,14 @@
+@keyframes pulse {
+    0% {-webkit-transform:scale(1)}
+    50%{-webkit-transform:scale(1.2)}
+    100% {-webkit-transform:scale(1)}
+
+  }
+
 .navBarBtn:hover {
-    -webkit-transform:scale(1.2);
-    transform: scale(1.2);
+    animation-name:pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  /*  -webkit-transform:scale(1.2);
+    transform: scale(1.2);*/
 }

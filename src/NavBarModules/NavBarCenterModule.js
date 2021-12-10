@@ -43,13 +43,13 @@ const NavBarCenterModule = (props) => {
     return(
     
         <div>           
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn" type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideDisplayModules}>
-                <i class="bi bi-file-earmark-bar-graph navBarBtn"></i> Strategie  </button>
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn" type="button" onMouseEnter={showMaterialModule} onMouseLeave={hideDisplayModules}>
+            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideDisplayModules}>
+                <i class="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategia  </button>
+            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} onMouseLeave={hideDisplayModules}>
                 <i class="bi bi-journal-bookmark-fill "> </i> Materiały </button>
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn" type="button" onMouseEnter={showTestsModule} onMouseLeave={hideDisplayModules} >
+            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} onMouseLeave={hideDisplayModules} >
                 <i class="bi bi-file-earmark-text"></i> Testy </button>
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn" type="button" onMouseEnter={showPositionsModule} onMouseLeave={hideDisplayModules} >
+            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule} onMouseLeave={hideDisplayModules} >
                 <i class="bi bi-bar-chart"></i> Zagrania </button>
         </div>
 
