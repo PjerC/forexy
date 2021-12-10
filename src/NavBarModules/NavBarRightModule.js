@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const NavBarRightModule = (props) => {
-    const {backgroundColor,setBackgroundColor} = props;
+    const {setBackgroundColor} = props;
 
     const changeBackgroundColor = () => {
         console.log('click')

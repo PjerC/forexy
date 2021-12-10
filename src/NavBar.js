@@ -6,7 +6,7 @@ import NavBarRightModule from './NavBarModules/NavBarRightModule';
 
 const NavBar = (props) => {
 
-const {visibilityStrategy,setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial} = props;
+const {visibilityStrategy,setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial, visibilityTests,setVisibilityTests,visibilityPositions,setVisibilityPositions} = props;
 const {backgroundColor,setBackgroundColor} = props;
 
 return(
@@ -15,6 +15,8 @@ return(
                 <NavBarLeftModule />
                 <NavBarCenterModule visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy} 
                                     visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial}
+                                    visibilityTests={visibilityTests} setVisibilityTests={setVisibilityTests}
+                                    visibilityPositions={visibilityPositions} setVisibilityPositions={setVisibilityPositions}
                 />
                 <NavBarRightModule  backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />
         </nav>

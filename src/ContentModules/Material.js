@@ -1,7 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Material = (props) => {
+
+    /* grid 4 x 4  materialy od 1 do 8
+        ikony + temat
+        jesli hover to zwiekszenie i pokazanie contentu
+    */
     return (
-        <div> material module </div>
+        <div className="border border-secondary"> material module </div>
     )
 }
 export default Material  
