@@ -8,13 +8,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const App = (props) => {
 
   const [visibilityStrategy,setVisibilityStrategy] = useState(false);
+  const [visibilityMaterial, setVisibilityMaterial] = useState(false);
 
   const {backgroundColor,setBackgroundColor} = props;
 
   return (
     <div style={{backgroundColor:backgroundColor}} className="d-flex flex-column container-fluid App justify-content-center align-items-center">
-      <NavBar backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}/>
-      <DisplayModule  visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}/>
+      <NavBar 
+              backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} 
+              visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}
+              visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial}
+              />
+      <DisplayModule  visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}
+                      visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial}
+      />
       <Footer />
     </div>
   );

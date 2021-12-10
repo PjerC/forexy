@@ -5,12 +5,13 @@ import DisplayCenterModule from './DisplayModules/DisplayCenterModule';
 // centered module with nested components
 const DisplayModule = (props) => {
     
-    const {visibilityStrategy,setVisibilityStrategy} =props;
+    const {visibilityStrategy,setVisibilityStrategy, visibilityMaterial, setVisibilityMaterial} =props;
 
     return(
-        <div className="flex-grow-1 w-100 align-self-center justify-content-center m-2 border border-warning" >
-            display module 
-             <DisplayCenterModule  visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}/>
+        <div className="d-flex flex-grow-1 w-100 align-self-center justify-content-center m-2 border border-secondary" >
+             <DisplayCenterModule   visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}
+                                    visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial} 
+             />
         </div>
         
     )
