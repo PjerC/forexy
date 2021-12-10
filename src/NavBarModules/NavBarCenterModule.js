@@ -13,7 +13,7 @@ const NavBarCenterModule = (props) => {
         setVisibilityPositions(false);
         setVisibilityMaterial(false);
     }
-    // onclick przekierowuje na nastepna strone z contentem - ze strony podgladu 
+    //TODO  onclick przekierowuje na nastepna strone z contentem - ze strony podgladu 
 
     const showStrategyModule = () => {
         setVisibilityStrategy(!visibilityStrategy);

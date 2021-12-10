@@ -13,6 +13,7 @@ const DisplayModule = (props) => {
                                     visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial} 
                                     visibilityTests={visibilityTests} setVisibilityTests={setVisibilityTests}
                                     visibilityPositions={visibilityPositions} setVisibilityPositions={setVisibilityPositions}
+                                    
              />
         </div>
         
