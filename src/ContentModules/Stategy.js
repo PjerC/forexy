@@ -12,7 +12,7 @@ const Strategy = (props) => {
         {strategyName:'patterns',previewImgUrl: 'img7'}
     
     ];
-   //const objStrategies = ['fibonacci','trendlines','divergence','support & resistance','price action','ema200','patterns'];
+   //TO DO - zakodzic metode do animowania kazdego elementu objektu - OSOBNO  , delay iteration ?
 
     return (
 
