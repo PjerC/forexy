@@ -9,7 +9,7 @@ const DisplayModule = (props) => {
 
     return(
         <div className="d-flex flex-grow-1 w-100 align-self-center justify-content-center m-1" >
-             <DisplayCenterModule   visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}
+            <DisplayCenterModule   visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}
                                     visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial} 
                                     visibilityTests={visibilityTests} setVisibilityTests={setVisibilityTests}
                                     visibilityPositions={visibilityPositions} setVisibilityPositions={setVisibilityPositions}

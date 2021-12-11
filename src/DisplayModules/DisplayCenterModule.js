@@ -10,12 +10,12 @@ const DisplayCenterModule = (props) => {
     const {visibilityStrategy, visibilityMaterial, visibilityTests, visibilityPositions} = props;
     
     return(
-        <div className="d-flex flex-grow-1 justify-content-center align-items-center m-1 centerModule">
-         {visibilityStrategy && <Strategy />}
-         {visibilityMaterial && <Material />}
-         {visibilityTests && <Tests />}
-         {visibilityPositions && <Positions />}
-        </div>
+        <div className="d-flex flex-grow-1 flex-column justify-content-center align-items-center m-1 centerModule border border-primary">
+                {visibilityStrategy && <Strategy />}
+                {visibilityMaterial && <Material />}
+                {visibilityTests && <Tests />}
+                {visibilityPositions && <Positions />}
+            </div>
     )
 }
 export default DisplayCenterModule;
