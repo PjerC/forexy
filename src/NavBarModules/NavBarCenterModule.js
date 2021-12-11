@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './NavBarStyles.css';
 
 const NavBarCenterModule = (props) => {
-    
+    const [btnBackgroundColor,setBtnBackgroundColor] = useState('text-primary')
     const {visibilityStrategy,setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial,visibilityTests,setVisibilityTests,visibilityPositions,setVisibilityPositions} = props;
     // visibility functions management 
     const hideDisplayModules = () => {
@@ -43,7 +44,7 @@ const NavBarCenterModule = (props) => {
     return(
     
         <div>           
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideDisplayModules}>
+            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} >
                 <i class="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategia  </button>
             <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} onMouseLeave={hideDisplayModules}>
                 <i class="bi bi-journal-bookmark-fill "> </i> Materiały </button>
