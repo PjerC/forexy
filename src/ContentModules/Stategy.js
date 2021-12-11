@@ -24,7 +24,7 @@ const Strategy = (props) => {
                 <div style={{animation:'animScale 500ms'}} 
                     className="d-flex flex-column justify-content-center align-items-center w-50 h-50 g-row-6 g-col-md-4 p-2 border border-secondary rounded m-2 animScale" 
                     key={item.strategyName}>
-                        <p style={{animation: 'fadeIn 1s'}} className='fw-bold font-monospace h-25'>{item.strategyName}</p>
+                        <p style={{animation: 'fadeIn 1s'}} className='fs-4 fw-bold font-monospace h-25'>{item.strategyName}</p>
                         <img className='img-fluid m-0 p-1 fadeIn 2s border border-secondary rounded h-75' src={item.previewImgUrl} alt='no  ne'/>
                  </div>)}
         </div>
