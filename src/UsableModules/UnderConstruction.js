@@ -5,7 +5,7 @@ import './UsableModules.css';
 const UnderConstruction = (props) => {
 
     return (
-        <div className="text-primary d-flex flex-grow-1 h-100 justify-content-center align-items-center ">
+        <div className="text-primary d-flex flex-grow-1  justify-content-center align-items-center ">
             <i class="fs-1 bi bi-currency-bitcoin animRotate"></i>
             <p> under construction </p>
             <i class="fs-1 bi bi-currency-dollar animRotate"></i>
