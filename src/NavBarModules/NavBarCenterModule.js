@@ -51,13 +51,13 @@ const NavBarCenterModule = (props) => {
     
         <div>           
             <button  style={{textDecoration:btnBackgroundColor}} className="flex-fill btn btn-lg text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideOthenThanStrategyModules}>
-                <i class="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategia  </button>
+                <i class="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategy  </button>
             <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} >
-                <i class="bi bi-journal-bookmark-fill "> </i> Materiały </button>
+                <i class="bi bi-journal-bookmark-fill "> </i> Learn </button>
             <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} >
-                <i class="bi bi-file-earmark-text"></i> Testy </button>
+                <i class="bi bi-file-earmark-text"></i> Tests </button>
             <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule}  >
-                <i class="bi bi-bar-chart"></i> Zagrania </button>
+                <i class="bi bi-bar-chart"></i> Positions </button>
         </div>
 
     )
