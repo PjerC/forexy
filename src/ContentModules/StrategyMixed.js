@@ -1,7 +1,7 @@
 
 const StrategyMixed = (props) => {
     return(
-        <div> mixed strategy inspect </div>
+        <div> mixed strategy commit </div>
     )
 }
 
