@@ -10,7 +10,7 @@ const NavBarRightModule = (props) => {
     }
     return (
         <div> 
-            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn" type="button"><i class="bi bi-yin-yang" onClick={changeBackgroundColor}></i></button>
+            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn" type="button"><i className="bi bi-yin-yang" onClick={changeBackgroundColor}></i></button>
         </div>
     )
 }

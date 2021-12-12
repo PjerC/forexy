@@ -6,9 +6,9 @@ const UnderConstruction = (props) => {
 
     return (
         <div className="text-primary d-flex flex-grow-1  justify-content-center align-items-center ">
-            <i class="fs-1 bi bi-currency-bitcoin animRotate"></i>
+            <i className="fs-1 bi bi-currency-bitcoin animRotate"></i>
             <p> under construction </p>
-            <i class="fs-1 bi bi-currency-dollar animRotate"></i>
+            <i className="fs-1 bi bi-currency-dollar animRotate"></i>
         </div>
             
     )

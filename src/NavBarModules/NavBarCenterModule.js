@@ -6,7 +6,7 @@ import './NavBarStyles.css';
     // TO DO przerobic stany widocznosci na jeden obiekt
 const NavBarCenterModule = (props) => {
     const [btnBackgroundColor,setBtnBackgroundColor] = useState('none')
-    const {visibilityStrategy,setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial,visibilityTests,setVisibilityTests,visibilityPositions,setVisibilityPositions} = props;
+    const {setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial,visibilityTests,setVisibilityTests,visibilityPositions,setVisibilityPositions} = props;
     // visibility functions management 
     const hideOthenThanStrategyModules = () => {
         setVisibilityTests(false);
@@ -51,13 +51,13 @@ const NavBarCenterModule = (props) => {
     
         <div>           
             <button  style={{textDecoration:btnBackgroundColor}} className="flex-fill btn btn-lg text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideOthenThanStrategyModules}>
-                <i class="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategy  </button>
+                <i className="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategy  </button>
             <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} >
-                <i class="bi bi-journal-bookmark-fill "> </i> Learn </button>
+                <i className="bi bi-journal-bookmark-fill "> </i> Learn </button>
             <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} >
-                <i class="bi bi-file-earmark-text"></i> Tests </button>
+                <i className="bi bi-file-earmark-text"></i> Tests </button>
             <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule}  >
-                <i class="bi bi-bar-chart"></i> Positions </button>
+                <i className="bi bi-bar-chart"></i> Positions </button>
         </div>
 
     )

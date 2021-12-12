@@ -20,7 +20,7 @@ const Strategy = (props) => {
         <div style={{animation:'fadeIn 1s'}}  className="d-flex container-fluid text-secondary h-50 justify-content-center align-items-center flex-grow-1 m-2"> 
         {
             objStrategies.map((item) => 
-                <div style={{animation:'animScale 500ms'}} className='d-flex' onMouseEnter={()=>{setPreviewText(item.preview)}} 
+                <div style={{animation:'animScale 500ms'}} onMouseEnter={()=>{setPreviewText(item.preview)}} 
                     className="d-flex flex-column justify-content-center align-items-center w-50 h-75  p-2 border border-secondary rounded m-2 animScale" 
                     key={item.strategyName}>
                         <p style={{animation: 'fadeIn 1s'}} className='fs-4 fw-bold font-monospace h-25'>{item.strategyName}</p>
