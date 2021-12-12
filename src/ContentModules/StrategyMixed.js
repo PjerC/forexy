@@ -1,7 +1,7 @@
 
 const StrategyMixed = (props) => {
     return(
-        <div> mixed strategy </div>
+        <div> mixed strategy  button </div>
     )
 }
 
