@@ -50,13 +50,13 @@ const NavBarCenterModule = (props) => {
     return(
     
         <div>           
-            <button  style={{textDecoration:btnBackgroundColor}} className="flex-fill btn btn-lg text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideOthenThanStrategyModules}>
+            <button  style={{textDecoration:btnBackgroundColor}} className="flex-fill btn btn-sm text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideOthenThanStrategyModules}>
                 <i className="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategy  </button>
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} >
+            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} >
                 <i className="bi bi-journal-bookmark-fill "> </i> Learn </button>
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} >
+            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} >
                 <i className="bi bi-file-earmark-text"></i> Tests </button>
-            <button className="flex-fill btn btn-lg text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule}  >
+            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule}  >
                 <i className="bi bi-bar-chart"></i> Positions </button>
         </div>
 
