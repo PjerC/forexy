@@ -6,8 +6,12 @@
     transition: transform .5s;
     
 }
+.animScale_2{
+    transition:  transform .5;
+}
 .animScale:hover {
     transform: scale(1.1);
     background-color: rgb(33, 38, 53);
     color: burlywood;
 }
+.animScale_2:hover {color: rgb(150, 138, 123);}

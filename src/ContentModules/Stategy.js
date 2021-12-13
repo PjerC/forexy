@@ -10,23 +10,26 @@ const Strategy = (props) => {
         {strategyName:'support resistance',previewImgUrl: 'https://drive.google.com/uc?id=1lY-GpUSk7EJhD5TPHb31pM8AKr19ltAy',preview:'Finding levels where price was reacting historically. Included pryschological levels and quarters theory'},
         {strategyName:'price action',previewImgUrl: 'https://drive.google.com/uc?id=14FC-sakmyIgJy0JXBjwzB9_IkkqcO5GO',preview:'Finding market structure, higher high, higher lows, lower highs, lower lows. Also BoS method'},
         {strategyName:'ema sma',previewImgUrl: 'https://drive.google.com/uc?id=11n_JROa1Ajahxp8GmJpxQQ9gfKYbsvO1',preview:'finding actual trend structure based on moving averages'},
-        {strategyName:'patterns',previewImgUrl: 'https://drive.google.com/uc?id=1oRaVsDJdXH-z7Vccsg0tB6JdF5X4eRE9',preview:'patterns base strategy for confirmations'}
+        {strategyName:'patterns',previewImgUrl: 'https://drive.google.com/uc?id=1oRaVsDJdXH-z7Vccsg0tB6JdF5X4eRE9',preview:'patterns base strategy for confirmations'},
+        {strategyName:'mix',previewImgUrl: '',preview:'mixed strategy'}
     ];
    //TO DO - zakodzic metode do animowania kazdego elementu objektu - OSOBNO  , delay iteration ?
    //TO DO - spinner - img loading 
-    
+   // to do - usunac inline style i dodac do głownego css kompnentu - best practice 
+    // <img src={item.previewImgUrl} className='img-fluid'></img>
     return (
         
-        <div style={{animation:'fadeIn 1s'}}  className="d-flex container-fluid text-secondary justify-content-center align-items-center flex-grow-1 m-2 border border-secondary"> 
+        <div style={{animation:'fadeIn 1s'}}  className='d-flex flex-wrap  text-secondary w-50 h-75  justify-content-center align-items-center'> 
         {
             objStrategies.map((item) => 
                 <div style={{animation:'animScale 500ms'}} onMouseEnter={()=>{setPreviewText(item.preview)}} 
-                    className="d-flex flex-column justify-content-center align-items-center w-100 h-75  p-2 border border-secondary rounded m-2 animScale" 
+                    className='d-flex flex-column w-25 h-25 justify-content-center align-items-center border border-secondary rounded m-2 animScale'
                     key={item.strategyName}>
-                        <p style={{animation: 'fadeIn 1s'}} className='fs-5 fw-bold text-wrap font-monospace h-25'>{item.strategyName}</p>
-                        <img className='img-fluid m-0 p-1 fadeIn 2s border border-secondary rounded h-75' src={item.previewImgUrl} alt='none'/>
+                        <p style={{animation: 'fadeIn 1s'}} className='fw-bold justify-content-center font-monospace'>{item.strategyName}</p>
+                        <i class="bi bi-chevron-double-right animScale_2 m-2 "></i>
                  </div>)
         }
+
         </div>
     )
 }
