@@ -7,7 +7,7 @@ const NavBarRightModule = (props) => {
     const changeBackgroundColor = () => {setBackgroundColor('white')}
     return (
         <div> 
-            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn" type="button"><i className="bi bi-yin-yang" onClick={changeBackgroundColor}></i></button>
+            <button className="disabled flex-fill btn btn-sm text-secondary m-1 navBarBtn" type="button"><i className="bi bi-yin-yang" onClick={changeBackgroundColor}></i></button>
         </div>
     )
 }

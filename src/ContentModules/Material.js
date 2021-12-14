@@ -5,8 +5,6 @@ import './ContentModules.css';
 
 
 const Material = (props) => {
-    //states
-   // const [icon,setIcon] = useState('bi bi-folder')
     // pl
     const objMaterials = [
         {no:'1.', title: 'Podstawy'},

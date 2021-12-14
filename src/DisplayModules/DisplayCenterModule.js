@@ -14,9 +14,9 @@ const DisplayCenterModule = (props) => {
     const {visibilityStrategy, visibilityMaterial, visibilityTests, visibilityPositions} = props;
     // jesli aktywny modul 'strategia' pokaz modul preview content strategy
     return(
-        <div className="d-flex flex-column justify-content-center align-items-center centerModule border border-primary w-50">     
-                {visibilityStrategy && <Strategy  setPreviewText={setPreviewText}/>}
-                {visibilityStrategy && <StrategyPreview previewText={previewText}  />}
+        <div className="d-flex flex-grow-1 flex-column justify-content-center align-items-center centerModule border border-primary m-1">   
+                {visibilityStrategy && <StrategyPreview previewText={previewText}  />}  
+                {visibilityStrategy && <Strategy  setPreviewText={setPreviewText}/>}   
                 {visibilityMaterial && <Material />}
                 {visibilityTests && <Tests />}
                 {visibilityPositions && <Positions />}

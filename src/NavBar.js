@@ -11,7 +11,7 @@ const {backgroundColor,setBackgroundColor} = props;
 
 return(
     <div>
-        <nav className="navbar navbar-dark border-bottom border-secondary"> 
+        <nav className="navbar flex-nowrap navbar-dark border-bottom border-secondary"> 
                 <NavBarLeftModule />
                 <NavBarCenterModule visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy} 
                                     visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial}
