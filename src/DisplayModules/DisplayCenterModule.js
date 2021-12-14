@@ -10,13 +10,13 @@ import StrategyPreview from '../ContentModules/StrategyPreview.js'
 
 const DisplayCenterModule = (props) => {
     // visibility display initial states
-    const [previewText,setPreviewText] = useState('Choose one strategy:');
+    const [previewText,setPreviewText] = useState('Wybierz strategie');
     const {visibilityStrategy, visibilityMaterial, visibilityTests, visibilityPositions} = props;
     // jesli aktywny modul 'strategia' pokaz modul preview content strategy
     return(
-        <div className="d-flex flex-grow-1 flex-column justify-content-center align-items-center centerModule">
-                {visibilityStrategy && <StrategyPreview previewText={previewText}  />}
+        <div className="d-flex flex-column justify-content-center align-items-center centerModule border border-primary w-50">     
                 {visibilityStrategy && <Strategy  setPreviewText={setPreviewText}/>}
+                {visibilityStrategy && <StrategyPreview previewText={previewText}  />}
                 {visibilityMaterial && <Material />}
                 {visibilityTests && <Tests />}
                 {visibilityPositions && <Positions />}
