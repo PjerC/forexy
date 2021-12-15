@@ -6,6 +6,7 @@ import Material from '../ContentModules/Material.js';
 import Tests from '../ContentModules/Tests.js';
 import Positions from '../ContentModules/Positions.js';
 import StrategyPreview from '../ContentModules/StrategyPreview.js'
+import './DisplayModules.css'
 
 
 const DisplayCenterModule = (props) => {
@@ -14,7 +15,7 @@ const DisplayCenterModule = (props) => {
     const {visibilityStrategy, visibilityMaterial, visibilityTests, visibilityPositions} = props;
     // jesli aktywny modul 'strategia' pokaz modul preview content strategy
     return(
-        <div className="d-flex flex-grow-1 flex-column justify-content-center align-items-center centerModule border border-primary m-1">   
+        <div className="d-flex flex-grow-1 flex-column justify-content-center align-items-center centerModule rounded m-1">
                 {visibilityStrategy && <StrategyPreview previewText={previewText}  />}  
                 {visibilityStrategy && <Strategy  setPreviewText={setPreviewText}/>}   
                 {visibilityMaterial && <Material />}

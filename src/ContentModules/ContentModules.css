@@ -6,12 +6,15 @@
     transition: transform .5s;
     
 }
-.animScale_2{
+.animScale_2:hover{
     transition:  transform .5;
+    color: burlywood;
 }
 .animScale:hover {
     transform: scale(1.1);
     background-color: rgb(33, 38, 53);
+    transition: .3s;
+    box-shadow:0 4px 8px 0 rgba(214, 207, 207, 0.2), 0 6px 20px 0 rgba(143, 138, 138, 0.19);
     color: burlywood;
 }
 .animScale_2:hover {color: rgb(150, 138, 123);}

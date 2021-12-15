@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const App = (props) => {
 
   // visibility initial states 
-  // add welcome module with initial visiility true 
+  // TO_DO  welcome module with initial visiility true 
   const [visibilityStrategy,setVisibilityStrategy] = useState(false);
   const [visibilityMaterial, setVisibilityMaterial] = useState(false);
   const [visibilityTests,setVisibilityTests] = useState(false);
@@ -17,7 +17,7 @@ const App = (props) => {
   const {backgroundColor,setBackgroundColor} = props;
 
   return (
-    <div style={{backgroundColor:backgroundColor}} className="d-flex flex-column container-fluid App justify-content-center align-items-center">
+    <div style={{backgroundColor:backgroundColor? 'rgb(19,23,34)':'white'}} className="d-flex flex-column container-fluid App justify-content-center align-items-center">
       <NavBar 
               backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} 
               visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}

@@ -5,7 +5,11 @@ import './NavBarStyles.css';
 
     // TO DO przerobic stany widocznosci na jeden obiekt
 const NavBarCenterModule = (props) => {
-    const [btnBackgroundColor,setBtnBackgroundColor] = useState('none')
+    // btns underline setter
+    const [btnBackgroundColor1,setBtnBackgroundColor1] = useState('none');
+    const [btnBackgroundColor2,setBtnBackgroundColor2] = useState('none');
+    const [btnBackgroundColor3,setBtnBackgroundColor3] = useState('none');
+    const [btnBackgroundColor4,setBtnBackgroundColor4] = useState('none');
     const {setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial,visibilityTests,setVisibilityTests,visibilityPositions,setVisibilityPositions} = props;
     // visibility functions management 
     const hideOthenThanStrategyModules = () => {
@@ -16,7 +20,10 @@ const NavBarCenterModule = (props) => {
 
     const showStrategyModule = () => {
         // btn
-        setBtnBackgroundColor('underline')
+        setBtnBackgroundColor1('underline')
+        setBtnBackgroundColor2('none')
+        setBtnBackgroundColor3('none')
+        setBtnBackgroundColor4('none')
         //modules
         setVisibilityStrategy(true);
         setVisibilityMaterial(false);
@@ -25,7 +32,10 @@ const NavBarCenterModule = (props) => {
     };
     const showMaterialModule = () => {
         // btn underline visibility
-        setBtnBackgroundColor('none')
+        setBtnBackgroundColor1('none')
+        setBtnBackgroundColor2('underline')
+        setBtnBackgroundColor3('none')
+        setBtnBackgroundColor4('none')
         setVisibilityMaterial(!visibilityMaterial);
         setVisibilityStrategy(false);
         setVisibilityTests(false);
@@ -33,7 +43,10 @@ const NavBarCenterModule = (props) => {
     };
     const showTestsModule = () => {
         // btn underline visibility
-        setBtnBackgroundColor('none')
+        setBtnBackgroundColor1('none')
+        setBtnBackgroundColor2('none')
+        setBtnBackgroundColor3('underline')
+        setBtnBackgroundColor4('none')
         setVisibilityTests(!visibilityTests);
         setVisibilityMaterial(false);
         setVisibilityStrategy(false);
@@ -41,7 +54,10 @@ const NavBarCenterModule = (props) => {
     }
     const showPositionsModule = () => {
         // btn underline visibility
-        setBtnBackgroundColor('none')
+        setBtnBackgroundColor1('none')
+        setBtnBackgroundColor2('none')
+        setBtnBackgroundColor3('none')
+        setBtnBackgroundColor4('underline')
         setVisibilityPositions(!visibilityPositions);
         setVisibilityMaterial(false);
         setVisibilityStrategy(false);
@@ -50,13 +66,13 @@ const NavBarCenterModule = (props) => {
     return(
     
         <div>           
-            <button  style={{textDecoration:btnBackgroundColor}} className="flex-fill btn btn-sm text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideOthenThanStrategyModules}>
+            <button  style={{textDecoration:btnBackgroundColor1}} className="flex-fill btn btn-sm text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideOthenThanStrategyModules}>
                 <i className="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategy  </button>
-            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} >
+            <button style={{textDecoration:btnBackgroundColor2}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} >
                 <i className="bi bi-journal-bookmark-fill "> </i> Learn </button>
-            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} >
+            <button style={{textDecoration:btnBackgroundColor3}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} >
                 <i className="bi bi-file-earmark-text"></i> Tests </button>
-            <button className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule}  >
+            <button style={{textDecoration:btnBackgroundColor4}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule}  >
                 <i className="bi bi-bar-chart"></i> Positions </button>
         </div>
 

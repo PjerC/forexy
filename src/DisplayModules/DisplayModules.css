@@ -1,0 +1,4 @@
+.centerModule:hover {
+    transition: 1s;
+    box-shadow:0 4px 8px 0 rgba(214, 207, 207, 0.2), 0 6px 20px 0 rgba(143, 138, 138, 0.19);
+}

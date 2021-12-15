@@ -23,10 +23,13 @@ const Strategy = (props) => {
         {
             objStrategies.map((item) => 
                 <div style={{animation:'animScale 500ms'}} onMouseEnter={()=>{setPreviewText(item.preview)}} 
-                    className='justify-content-center align-items-center border border-secondary rounded m-2 p-2 animScale'
+                    className='animScale justify-content-center align-items-center border border-secondary rounded m-2 p-2'
                     key={item.strategyName}>
-                        <p style={{animation: 'fadeIn 1s'}} className='fw-bold justify-content-center font-monospace'>{item.strategyName}</p>
-                        <i className="bi bi-play animScale_2 "></i>
+                        <button className='btn animScale_2 shadow-none'>
+                            <p style={{animation: 'fadeIn 1s'}} className='text-secondary fw-bold justify-content-center font-monospace '>{item.strategyName}</p>
+                            <i className='fs-2 bi bi-play'></i>
+                         </button>
+
                  </div>)
         }
 
