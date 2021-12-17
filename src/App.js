@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import NavBar from './NavBar.js'
-import DisplayModule from './DisplayModule.js'
+import NavBar from './NavBarModules/NavBar.js'
+import DisplayModule from './DisplayModules/DisplayModule.js'
 import Footer from './Footer.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 

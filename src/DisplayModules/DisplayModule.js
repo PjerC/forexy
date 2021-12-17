@@ -1,6 +1,6 @@
 //import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import DisplayCenterModule from './DisplayModules/DisplayCenterModule';
+import DisplayCenterModule from './DisplayCenterModule';
 
 // centered module with nested components
 const DisplayModule = (props) => {

@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
-import NavBarCenterModule from './NavBarModules/NavBarCenterModule';
-import NavBarLeftModule from './NavBarModules/NavBarLeftModule';
-import NavBarRightModule from './NavBarModules/NavBarRightModule';
+import NavBarCenterModule from './NavBarCenterModule';
+import NavBarLeftModule from './NavBarLeftModule';
+import NavBarRightModule from './NavBarRightModule';
 
 const NavBar = (props) => {
 
