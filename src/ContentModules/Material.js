@@ -18,9 +18,6 @@ const Material = (props) => {
         {no:'9.', title: 'Pozostałe'}
     ]
 
-    // TO DO - zmienim onmouseleave / enter na jedna funkcje   typy false/true 
-    //const changeFolderImg = () => {setFolderImg('text-secondary bi bi-folder2-open')}
-    //const changeImgToInitial = () => {setFolderImg('text-secondary bi bi-folder')}
     return (
         <div className='container text-secondary align-items-center justify-content-center m-1'>
             <div className='row justify-content-md-center align-items-center m-1'>

@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap';
 import './App.css';
 import NavBar from './NavBarModules/NavBar.js'
 import DisplayModule from './DisplayModules/DisplayModule.js'
@@ -18,6 +21,7 @@ const App = (props) => {
 
   return (
     <div style={{backgroundColor:backgroundColor? 'rgb(19,23,34)':'white'}} className="d-flex flex-column container-fluid App justify-content-center align-items-center">
+      
       <NavBar 
               backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} 
               visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy}

@@ -10,11 +10,21 @@ const NavBarCenterModule = (props) => {
     const [btnBackgroundColor2,setBtnBackgroundColor2] = useState('none');
     const [btnBackgroundColor3,setBtnBackgroundColor3] = useState('none');
     const [btnBackgroundColor4,setBtnBackgroundColor4] = useState('none');
-    const {setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial,visibilityTests,setVisibilityTests,visibilityPositions,setVisibilityPositions} = props;
+    const {setVisibilityStrategy,setVisibilityMaterial,setVisibilityTests,setVisibilityPositions} = props;
     // visibility functions management 
     const hideOthenThanStrategyModules = () => {
         setVisibilityTests(false);
         setVisibilityPositions(false);
+        setVisibilityMaterial(false);
+    }
+    const hideOtherThanMaterialModules = () => {
+        setVisibilityPositions(false);
+        setVisibilityStrategy(false);
+        setVisibilityTests(false);
+    } 
+    const hideOtherThanTestsModules = () => {
+        setVisibilityPositions(false);
+        setVisibilityStrategy(false);
         setVisibilityMaterial(false);
     } 
 
@@ -36,7 +46,7 @@ const NavBarCenterModule = (props) => {
         setBtnBackgroundColor2('underline')
         setBtnBackgroundColor3('none')
         setBtnBackgroundColor4('none')
-        setVisibilityMaterial(!visibilityMaterial);
+        setVisibilityMaterial(true);
         setVisibilityStrategy(false);
         setVisibilityTests(false);
         setVisibilityPositions(false);
@@ -47,7 +57,7 @@ const NavBarCenterModule = (props) => {
         setBtnBackgroundColor2('none')
         setBtnBackgroundColor3('underline')
         setBtnBackgroundColor4('none')
-        setVisibilityTests(!visibilityTests);
+        setVisibilityTests(true);
         setVisibilityMaterial(false);
         setVisibilityStrategy(false);
         setVisibilityPositions(false);
@@ -58,7 +68,7 @@ const NavBarCenterModule = (props) => {
         setBtnBackgroundColor2('none')
         setBtnBackgroundColor3('none')
         setBtnBackgroundColor4('underline')
-        setVisibilityPositions(!visibilityPositions);
+        setVisibilityPositions(true);
         setVisibilityMaterial(false);
         setVisibilityStrategy(false);
         setVisibilityTests(false);
@@ -68,9 +78,9 @@ const NavBarCenterModule = (props) => {
         <div>           
             <button  style={{textDecoration:btnBackgroundColor1}} className="flex-fill btn btn-sm text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onMouseEnter={showStrategyModule} onMouseLeave={hideOthenThanStrategyModules}>
                 <i className="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategy  </button>
-            <button style={{textDecoration:btnBackgroundColor2}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} >
+            <button style={{textDecoration:btnBackgroundColor2}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showMaterialModule} onMouseLeave={hideOtherThanMaterialModules}>
                 <i className="bi bi-journal-bookmark-fill "> </i> Learn </button>
-            <button style={{textDecoration:btnBackgroundColor3}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} >
+            <button style={{textDecoration:btnBackgroundColor3}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showTestsModule} onMouseLeave={hideOtherThanTestsModules}>
                 <i className="bi bi-file-earmark-text"></i> Tests </button>
             <button style={{textDecoration:btnBackgroundColor4}} className="flex-fill btn btn-sm text-secondary m-1 navBarBtn shadow-none" type="button" onMouseEnter={showPositionsModule}  >
                 <i className="bi bi-bar-chart"></i> Positions </button>
