@@ -1,3 +1,15 @@
+@keyframes pulse {
+    0% {-webkit-transform:scale(1)}
+    50%{-webkit-transform:scale(1.2)}
+    100% {-webkit-transform:scale(1)}
+  }
+
+.pulser:hover{
+    animation-name:pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
 .animScale{
     transition: transform .5s;
 }
@@ -8,9 +20,11 @@
     transition: .3s;
     box-shadow:0 4px 8px 0 rgba(214, 207, 207, 0.2), 0 6px 20px 0 rgba(143, 138, 138, 0.19);
     color: burlywood;
+    
 }
 .animScale_2:hover{
     transition:  transform .5;
-    color: burlywood;
+    transform: scale(1.2);
+    color: rgb(150, 138, 123);
 }
-.animScale_2:hover {color: rgb(150, 138, 123);}
+

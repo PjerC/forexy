@@ -16,7 +16,6 @@ const App = (props) => {
   const [visibilityMaterial, setVisibilityMaterial] = useState(false);
   const [visibilityTests,setVisibilityTests] = useState(false);
   const [visibilityPositions,setVisibilityPositions] = useState(false);
-
   const {backgroundColor,setBackgroundColor} = props;
 
   return (

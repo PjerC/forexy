@@ -1,6 +1,8 @@
 //import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import UnderConstruction from "../UsableModules/UnderConstruction"
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,7 +14,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Positions = (props) => {
 
     return (
-<>under construction</>
+<><UnderConstruction/> </>
     )
 }
 export default Positions 
