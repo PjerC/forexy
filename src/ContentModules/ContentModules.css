@@ -24,7 +24,7 @@
 }
 .animScale_2:hover{
     transition:  transform .5;
-    transform: scale(1.2);
+    transform: scale(1.25);
     color: rgb(150, 138, 123);
 }
 

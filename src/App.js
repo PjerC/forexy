@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = (props) => {
 
-  // visibility initial states 
+
   // TO_DO  welcome module with initial visiility true 
   const [visibilityStrategy,setVisibilityStrategy] = useState(false);
   const [visibilityMaterial, setVisibilityMaterial] = useState(false);

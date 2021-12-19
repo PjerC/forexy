@@ -13,11 +13,11 @@ const Strategy = (props) => {
     const [visibilityStrategyItems,setVisibilityStrategyItems] = useState(true);
     const [visibilityStrategyPreview,setVisibilityStrategyPreview] = useState(true);
     // state data to preview strategy text
-    const {previewText,setPreviewText} = props;
+    const {setPreviewText} = props;
 
     return ( 
-        <div className='d-flex flex-column justify-content-center align-items-center'>
-            {visibilityStrategyPreview && <StrategyPreview previewText={previewText}/> }
+        <div className='d-flex flex-column justify-content-center align-items-center flex-grow-1 '>
+            {visibilityStrategyPreview && <StrategyPreview />}
             {visibilityStrategyItems && <StrategyItems 
                                                         setPreviewText={setPreviewText} 
                                                         setVisibilityStrategyItems={setVisibilityStrategyItems} 
