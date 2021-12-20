@@ -16,7 +16,7 @@ const DisplayCenterModule = (props) => {
     // second modules nested visibilit management
     
     return(
-        <div className="d-flex flex-grow-1 flex-column justify-content-center align-items-center centerModule rounded m-1">
+        <div className="d-flex flex-grow-1 flex-column justify-content-center align-items-center centerModule m-1">
                 {visibilityStrategy && <Strategy  setPreviewText={setPreviewText} previewText={previewText} 
                                                   setVisibilityStrategy={setVisibilityStrategy}
                                                   

@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './ContentModules.css';
-import MaterialPreviewBasics from '../MaterialContent/MaterialPreviewBasics';
-import MaterialPreviewApps from '../MaterialContent/MaterialPreviewApps';
+//import MaterialPreviewBasics from '../MaterialContent/MaterialPreviewBasics';
+//import MaterialPreviewApps from '../MaterialContent/MaterialPreviewApps';
 
 const MaterialItems = (props) => {
 

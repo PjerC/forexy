@@ -1,4 +1,4 @@
 .centerModule:hover {
-    transition: .3s;
+    transition: .25s;
     box-shadow:0px 0px 10px 1px rgba(66, 68, 90, 1);
 }
