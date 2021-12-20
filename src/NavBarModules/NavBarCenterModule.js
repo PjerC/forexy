@@ -50,15 +50,15 @@ const NavBarCenterModule = (props) => {
     }
     return(
     
-        <div className='border-bottom border-secondary'>           
-            <button  style={styler[0]} className="flex-fill btn btn-md text-secondary btnBackgroundColor m-1 navBarBtn shadow-none " type="button" onClick={showStrategyModule} >
-                <i className="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i> Strategie </button>
-            <button style={styler[1]} className="flex-fill btn btn-md text-secondary m-1 navBarBtn shadow-none" type="button" onClick={showMaterialModule} >
-                <i className="bi bi-journal-bookmark-fill "> </i> Materiały </button>
-            <button  style={styler[2]} className="flex-fill btn btn-md text-secondary m-1 navBarBtn shadow-none" type="button" onClick={showTestsModule} >
-                <i className="bi bi-file-earmark-text"></i> Testy </button>
-            <button  style={styler[3]} className="flex-fill btn btn-md text-secondary m-1 navBarBtn shadow-none" type="button" onClick={showPositionsModule}  >
-                <i className="bi bi-bar-chart"></i> Zagrania </button>
+        <div className='border-bottom border-secondary d-flex flex-column  m-2 justify-content-start'>           
+            <button  style={styler[0]} className="d-flex align-items-center justify-content-start btn btn-md text-secondary btnBackgroundColor m-2 navBarBtn shadow-none " type="button" onClick={showStrategyModule} >
+                <i className="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i><p className='m-1'>Strategie</p></button>
+            <button style={styler[1]} className="d-flex align-items-center justify-content-start flex-fill btn btn-md text-secondary m-2 navBarBtn shadow-none" type="button" onClick={showMaterialModule} >
+                <i className="bi bi-journal-bookmark-fill "> </i><p className='m-1'>Materiały</p> </button>
+            <button  style={styler[2]} className="d-flex align-items-center justify-content-start flex-fill btn btn-md text-secondary m-2 navBarBtn shadow-none" type="button" onClick={showTestsModule} >
+                <i className="bi bi-file-earmark-text"></i><p className='m-1'>Testy</p></button>
+            <button  style={styler[3]} className="d-flex align-items-center justify-content-start flex-fill btn btn-md text-secondary m-2 navBarBtn shadow-none" type="button" onClick={showPositionsModule}  >
+                <i className="bi bi-bar-chart"></i><p className='m-1'>Zagrania</p></button>
         </div>
 
     )

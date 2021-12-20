@@ -6,14 +6,9 @@ import MaterialPreviewApps from '../MaterialContent/MaterialPreviewApps';
 
 const MaterialItems = (props) => {
 
-    const {materialPreview,visibility} = props;
     return (
         <div className='d-flex justify-content-center align-items-center m-2 border border-primary flex-grow-1 '>
-            <p className='fs-4'>{materialPreview}</p>
-
-           {visibility[0] && <MaterialPreviewBasics/>}
-           {visibility[1] && <MaterialPreviewApps/>}
-
+            PREView
     </div> 
     )
 }

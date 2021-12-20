@@ -1,7 +1,7 @@
 
 const MaterialPreviewApps = (props) => {
     return (
-        <div>preview 2</div>
+        <div>Material preview apps</div>
     )
 }
 

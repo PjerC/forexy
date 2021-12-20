@@ -5,7 +5,8 @@
   }
 
 .navBarBtn:hover {
-    animation-name:pulse;
+    /*animation-name:pulse;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
+    background-color: rgb(33, 38, 53);
 }
