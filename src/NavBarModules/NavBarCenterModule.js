@@ -11,14 +11,26 @@ const NavBarCenterModule = (props) => {
         {textDecoration:'none',fontWeight:'normal'},
         {textDecoration:'none',fontWeight:'normal'},
         {textDecoration:'none',fontWeight:'normal'},
+        {textDecoration:'none',fontWeight:'normal'},
         {textDecoration:'none',fontWeight:'normal'}]);
 
-    const {setVisibilityStrategy,setVisibilityMaterial,setVisibilityTests,setVisibilityPositions} = props;
+    const {setVisibilityStrategy,setVisibilityMaterial,setVisibilityTests,setVisibilityPositions,setVisibilityHomePage} = props;
     // visibility functions management 
+    const showMainPage = () => {
+        // btn
+        setStyler([{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'underline',fontWeight:'bold'}])
+        //modules
+        setVisibilityHomePage(true);
+        setVisibilityStrategy(false);
+        setVisibilityMaterial(false);
+        setVisibilityTests(false);
+        setVisibilityPositions(false);
+    };    
     const showStrategyModule = () => {
         // btn
-        setStyler([{textDecoration:'underline',fontWeight:'bold'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'}])
+        setStyler([{textDecoration:'underline',fontWeight:'bold'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'}])
         //modules
+        setVisibilityHomePage(false);
         setVisibilityStrategy(true);
         setVisibilityMaterial(false);
         setVisibilityTests(false);
@@ -26,7 +38,8 @@ const NavBarCenterModule = (props) => {
     };
     const showMaterialModule = () => {
         // btn styling
-        setStyler([{textDecoration:'none',fontWeight:'normal'},{textDecoration:'underline',fontWeight:'bold'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'}])
+        setStyler([{textDecoration:'none',fontWeight:'normal'},{textDecoration:'underline',fontWeight:'bold'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'}])
+        setVisibilityHomePage(false);
         setVisibilityMaterial(true);
         setVisibilityStrategy(false);
         setVisibilityTests(false);
@@ -34,7 +47,8 @@ const NavBarCenterModule = (props) => {
     };
     const showTestsModule = () => {
         // btn styling
-        setStyler([{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'underline',fontWeight:'bold'},{textDecoration:'none',fontWeight:'normal'}])
+        setStyler([{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'underline',fontWeight:'bold'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'}])
+        setVisibilityHomePage(false);
         setVisibilityTests(true);
         setVisibilityMaterial(false);
         setVisibilityStrategy(false);
@@ -42,7 +56,8 @@ const NavBarCenterModule = (props) => {
     }
     const showPositionsModule = () => {
         // btn styling
-        setStyler([{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'underline',fontWeight:'bold'}])
+        setStyler([{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'none',fontWeight:'normal'},{textDecoration:'underline',fontWeight:'bold'},{textDecoration:'none',fontWeight:'normal'}])
+        setVisibilityHomePage(false);
         setVisibilityPositions(true);
         setVisibilityMaterial(false);
         setVisibilityStrategy(false);
@@ -50,7 +65,9 @@ const NavBarCenterModule = (props) => {
     }
     return(
     
-        <div className='border-bottom border-secondary d-flex flex-column  m-2 justify-content-start'>           
+        <div className='border-bottom border-secondary d-flex flex-column  m-2 justify-content-start'>
+             <button  style={styler[4]} className="d-flex align-items-center justify-content-start btn btn-md text-secondary btnBackgroundColor m-2 navBarBtn shadow-none " type="button" onClick={showMainPage} >
+                <i className="bi bi-house navBarBtn shadow-none"></i><p className='m-1'>Strona główna</p></button>                      
             <button  style={styler[0]} className="d-flex align-items-center justify-content-start btn btn-md text-secondary btnBackgroundColor m-2 navBarBtn shadow-none " type="button" onClick={showStrategyModule} >
                 <i className="bi bi-file-earmark-bar-graph navBarBtn shadow-none"></i><p className='m-1'>Strategie</p></button>
             <button style={styler[1]} className="d-flex align-items-center justify-content-start flex-fill btn btn-md text-secondary m-2 navBarBtn shadow-none" type="button" onClick={showMaterialModule} >

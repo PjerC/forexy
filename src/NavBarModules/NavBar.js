@@ -5,12 +5,16 @@ import NavBarRightModule from './NavBarRightModule';
 import '../custom.scss';
 const NavBar = (props) => {
 
-const {visibilityStrategy,setVisibilityStrategy,visibilityMaterial,setVisibilityMaterial, visibilityTests,setVisibilityTests,visibilityPositions,setVisibilityPositions} = props;
+const { visibilityStrategy,setVisibilityStrategy,
+        visibilityMaterial,setVisibilityMaterial, 
+        visibilityTests,setVisibilityTests,
+        visibilityPositions,setVisibilityPositions,
+        visibilityHomePage,setVisibilityHomePage} = props;
 const {backgroundColor,setBackgroundColor} = props;
 
 return(
     <div className='fixed-top d-flex flex-row justify-content-start m-1'>
-                <a href="#offcanvaser" className="btn btn-lg navBarBtn text-secondary shadow-none border border-secondary m-1" type="button" data-bs-toggle="offcanvas" aria-expanded="false" aria-controls="collapser">
+                <a href="#offcanvaser" className="btn btn-lg bg-dark navBarBtn text-secondary shadow-none border border-secondary m-1" type="button" data-bs-toggle="offcanvas" aria-expanded="false" aria-controls="collapser">
                     <i className="bi bi-list" ></i></a>
                     
                 <div id="offcanvaser" className='d-flex p-1 border border-secondary  horizontal-width-10 offcanvas offcanvas-start bg-dark' tabIndex="-1" aria-labelledby="offcanvas1">
@@ -19,7 +23,9 @@ return(
                 </div>
 
                 <div id='navBarContainer' className='d-flex flex-column justify-content-center m-1'>  
-                    <NavBarCenterModule visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy} 
+                    <NavBarCenterModule 
+                                    visibilityHomePage={visibilityHomePage} setVisibilityHomePage={setVisibilityHomePage}
+                                    visibilityStrategy={visibilityStrategy} setVisibilityStrategy={setVisibilityStrategy} 
                                     visibilityMaterial={visibilityMaterial} setVisibilityMaterial={setVisibilityMaterial}
                                     visibilityTests={visibilityTests} setVisibilityTests={setVisibilityTests}
                                     visibilityPositions={visibilityPositions} setVisibilityPositions={setVisibilityPositions}/>
