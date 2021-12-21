@@ -5,8 +5,7 @@ import 'bootstrap';
 import './App.css';
 import NavBar from './NavBarModules/NavBar.js'
 import DisplayModule from './DisplayModules/DisplayModule.js'
-import Footer from './Footer.js'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Footer from './FooterModules/Footer.js'
 
 const App = (props) => {
 
