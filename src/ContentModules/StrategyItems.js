@@ -14,7 +14,7 @@ const Strategy = (props) => {
     // state data to preview strategy text
     const {setPreviewText} = props;
     // visibility management
-    const {setVisibilityStrategyItems,setVisibilityStrategyPreview} = props;
+    const {setVisibilityStrategyItems} = props;
     // object - future from database inputs
     const objStrategies = [
         {strategyName:'I.', description: 'Zniesienie Fibonacci ',previewImgUrl: imgFib, preview:'Wyznaczanie poziomów zniesienia 0.618 & 0.5. Określanie początku i końca ruchu oraz golden zone.' },
@@ -44,7 +44,7 @@ const Strategy = (props) => {
                                     () => {
                                         // hide strategy preview and strategy items components , show chosen component from map fcn
                                         setVisibilityStrategyItems(false);
-                                        setVisibilityStrategyPreview(false);
+                                       // setVisibilityStrategyPreview(false);
                                         switch(item.strategyName) {
                                             case '1':
                                                 setVisibilityStrategyFibo(true);

@@ -1,7 +1,7 @@
 import './ContentModules.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
-import StrategyPreview from './StrategyPreview.js';
+//import StrategyPreview from './StrategyPreview.js';
 import StrategyFibo from '../StrategyContent/StrategyFibo';
 import StrategyTrendline from '../StrategyContent/StrategyTrendline';
 import StrategyItems from './StrategyItems.js'
@@ -11,7 +11,7 @@ const Strategy = (props) => {
     const [visibilityStrategyFibo,setVisibilityStrategyFibo] = useState(false);
     const [visibilityStrategyTrendline,setVisibilityStrategyTrendline] = useState(false);
     const [visibilityStrategyItems,setVisibilityStrategyItems] = useState(true);
-    const [visibilityStrategyPreview,setVisibilityStrategyPreview] = useState(true);
+  //  const [visibilityStrategyPreview,setVisibilityStrategyPreview] = useState(true);
     // state data to preview strategy text
     const {setPreviewText} = props;
 
@@ -22,7 +22,6 @@ const Strategy = (props) => {
                                                         setVisibilityStrategyItems={setVisibilityStrategyItems} 
                                                         setVisibilityStrategyFibo={setVisibilityStrategyFibo}
                                                         setVisibilityStrategyTrendline={setVisibilityStrategyTrendline}
-                                                        setVisibilityStrategyPreview={setVisibilityStrategyPreview}
                                         />}
             {visibilityStrategyFibo && <StrategyFibo/>}
             {visibilityStrategyTrendline && <StrategyTrendline/>}

@@ -18,7 +18,7 @@
     transform: scale(1.01);
     background-color: rgb(33, 38, 53);
     transition: .3s;
-    box-shadow:0 4px 4px 0 rgba(214, 207, 207, 0.2), 0 6px 6px 0 rgba(143, 138, 138, 0.19);
+    box-shadow:0 3px 4px 0 rgba(214, 207, 207, 0.2), 0 1px 1px 0 rgba(143, 138, 138, 0.19);
     color: burlywood;
     
 }
