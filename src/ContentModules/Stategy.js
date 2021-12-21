@@ -16,8 +16,7 @@ const Strategy = (props) => {
     const {setPreviewText} = props;
 
     return ( 
-        <div className='d-flex flex-column justify-content-center align-items-center flex-grow-1 '>
-            {visibilityStrategyPreview && <StrategyPreview />}
+        <div className='d-flex w-100 justify-content-center align-items-center flex-grow-1 '>
             {visibilityStrategyItems && <StrategyItems 
                                                         setPreviewText={setPreviewText} 
                                                         setVisibilityStrategyItems={setVisibilityStrategyItems} 
