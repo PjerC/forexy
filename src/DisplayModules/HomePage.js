@@ -1,10 +1,10 @@
 
 const HomePage = (props) => {
     return(
-<div className="d-flex flex-column flex-grow-1 w-75 m-5 p-3 justify-content-center align-items-center border border-secondary">
+<div className="d-flex flex-column flex-grow-1 w-100 m-5 p-3 justify-content-center align-items-center">
 
     
-    <div id="carouselMainPage" className="carousel slide d-flex flex-grow-1 w-100  border border-secondary  m-1 justify-content-center align-items-center carousel slide" data-bs-ride="carousel">
+    <div id="carouselMainPage" className="carousel slide d-flex flex-grow-1 w-100    m-1 justify-content-center align-items-center carousel slide" data-bs-ride="carousel">
     
     <div className="carousel-indicators">
         <button type="button" data-bs-target="#carouselMainPage" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

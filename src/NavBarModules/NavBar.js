@@ -14,10 +14,10 @@ const {backgroundColor,setBackgroundColor} = props;
 
 return(
     <div className='fixed-top d-flex flex-row justify-content-start m-1'>
-                <a href="#offcanvaser" className="btn btn-lg bg-dark navBarBtn text-secondary shadow-none border border-secondary m-1" type="button" data-bs-toggle="offcanvas" aria-expanded="false" aria-controls="collapser">
+                <a href="#offcanvaser" className="btn btn-lg bg-dark navBarBtn text-secondary shadow-none border border-secondary m-1 bg-transparent" type="button" data-bs-toggle="offcanvas" aria-expanded="false" aria-controls="collapser">
                     <i className="bi bi-list" ></i></a>
                     
-                <div id="offcanvaser" className='d-flex p-1 border border-secondary  horizontal-width-10 offcanvas offcanvas-start bg-dark' tabIndex="-1" aria-labelledby="offcanvas1">
+                <div id="offcanvaser" className='d-flex p-1 text-primary border border-secondary  horizontal-width-10 bg-dark offcanvas offcanvas-start bg-dark' tabIndex="-1" aria-labelledby="offcanvas1">
                 <div className="offcanvas-header">
                     <h5 className='offcanvas-title text-secondary fw-bold'><i className="bi bi-cash-coin"></i> Robie Piniondz </h5>
                 </div>
