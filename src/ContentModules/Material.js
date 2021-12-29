@@ -8,7 +8,7 @@ import MaterialItems from './MaterialItems';
 const Material = (props) => {
     
     return (
-        <div className='d-flex flex-wrap flex-row w-100 text-secondary align-content-around justify-content-center m-2'>
+        <div className='d-flex flex-wrap flex-row w-100 align-content-around justify-content-center m-2'>
                    <MaterialItems />    
         </div>
             

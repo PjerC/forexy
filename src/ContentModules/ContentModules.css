@@ -9,11 +9,9 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-
 .animScale{
     transition: transform .5s;
 }
-
 .animScale:hover {
     transform: scale(1.01);
     background-color: rgb(33, 38, 53);

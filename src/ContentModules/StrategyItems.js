@@ -9,12 +9,8 @@ import imgEmaSma from '../Img/strategy/emaSma.png'
 import imgPatterns from '../Img/strategy/patterns.png'
 
 const Strategy = (props) => {
-    // nested components visiblity setters
-    const {setVisibilityStrategyFibo,setVisibilityStrategyTrendline} = props;
     // state data to preview strategy text
     const {setPreviewText} = props;
-    // visibility management
-    const {setVisibilityStrategyItems} = props;
     // object - future from database inputs
     const objStrategies = [
         {strategyName:'I.', description: 'Zniesienie Fibonacci ',previewImgUrl: imgFib, preview:'Wyznaczanie poziomów zniesienia 0.618 & 0.5. Określanie początku i końca ruchu oraz golden zone.' },
@@ -28,10 +24,10 @@ const Strategy = (props) => {
     ];
 
     return ( 
-        <div className='d-flex flex-grow-1 flex-column  text-secondary font-monospace justify-content-center align-items-center m-1 p-1'> 
+        <div className='d-flex flex-grow-1 flex-column font-monospace justify-content-center align-items-center m-1 p-1'> 
             {
                 objStrategies.map((item) => 
-                <div className='d-flex flex-column  vh-75 flex-grow-1 animScale rounded m-1 justify-content-start align-items-center' 
+                <div className='d-flex flex-column  vh-75 flex-grow-1 animScale m-1 justify-content-start align-items-center' 
                      onMouseEnter={()=>{setPreviewText(item.preview)}} key={item.strategyName}>
                          <div id='cardHeader' className='d-flex flex-row'>
                             <h5 className="m-1 p-1 fw-bold ">{item.strategyName}</h5>
@@ -39,26 +35,9 @@ const Strategy = (props) => {
                         </div>
                         <div className='d-flex flex-row justify-content-center align-items-center'>
                             <p  className='d-flex flex-grow-1 m-1 p-1 text-start' >{item.preview}</p>
-                            <button type="button" className="text-secondary align-content-around btn shadow-none animScale_2 pulser " 
-                                onClick={
-                                    () => {
-                                        // hide strategy preview and strategy items components , show chosen component from map fcn
-                                        setVisibilityStrategyItems(false);
-                                       // setVisibilityStrategyPreview(false);
-                                        switch(item.strategyName) {
-                                            case '1':
-                                                setVisibilityStrategyFibo(true);
-                                                break;
-                                            case '2':
-                                                setVisibilityStrategyTrendline(true);
-                                                break;
-                                            default:
-                                        }
-                                        
-                                    }
-                                }><i className='fs-2 bi bi-play'></i></button>
+                            <button type="button" className="align-content-around btn shadow-none animScale_2 pulser " ></button>
                                 </div>
-                                <img src={item.previewImgUrl} className='img-fluid m-3 p-3 rounded border border-secondary' alt='none' />
+                                <img src={item.previewImgUrl} className='img-fluid m-3 p-3 border border-secondary' alt='none' />
                 </div>)
             }  
             </div>

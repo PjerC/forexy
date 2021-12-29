@@ -19,7 +19,7 @@ const App = (props) => {
   const {backgroundColor,setBackgroundColor} = props;
 
   return (
-    <div style={{backgroundColor:backgroundColor? 'rgb(19,23,34)':'white'}} className="d-flex flex-column container-fluid App justify-content-center align-items-center">
+    <div style={{backgroundColor:backgroundColor? 'rgb(19,23,34)':'white'}} className="d-flex flex-column container-fluid App justify-content-center text-secondary align-items-center">
       
       <NavBar 
               backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor}

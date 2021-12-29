@@ -29,10 +29,10 @@ const MaterialItems = (props) => {
                 {
                     el1:'Linie ema sma',
                     el2:'Linie trendu',
-                    el3:'Dywergencje',
+                    el3:'Schematy',
                     el4:'Price action',
-                    el5:'Schematy',
-                    el6:'Wsparcia i opory',
+                    el5:'Wsparcia i opory',
+                    el6:'Dywergencje',
                     el7:'Zniesienie Fibonacci',
                     el8:'Wydarzenia'
                 }
@@ -40,43 +40,56 @@ const MaterialItems = (props) => {
         {no:4, title: 'Wydarzenia', icon:'bi bi-tornado',
             content:
                 {
-                    el1:'4',
-                    el2:'5',
-                    el3:'6',
+                    el1:'Baza wydarzeń',
+                    el2:'Wagi wydarzeń',
+                    el3:'Typy wydarzeń',
+                    el4:'Przykłady',
+                    el5:'Łączenie analiz z wydarzeniami',
+                    el6:'Unikanie wydarzeń',
+                    el7:'Korelacje'
                 }
         },
         {no:5, title: 'Zarządzanie', icon:'bi bi-piggy-bank',
             content:
                 {
-                    el1:'7',
-                    el2:'8',
-                    el3:'9',
+                    el1:'Dobieranie stop loss & take profit',
+                    el2:'Dobieranie wielkości pozycji',
+                    el3:'Częściowe profity',
+                    el4:'Skalowanie',
+                    el5:'Gridowanie',
+                    el6:'Assymetric Compounding',
+                    el7:'Dobre nawyki',
+                    el8:'Godziny tradingu',
+                    el9:'Typ gry',
+                    el10:'Dziennik zagrań',
+                    el11:'Alertowanie',
+                    el12:'Zlecenia'
                 }
         },
         {no:6, title: 'Mentoring',icon:'bi bi-journal-bookmark',
             content:
                 {
-                    el1:'10',
-                    el2:'11',
-                    el3:'12',
+                    el1:'Plan',
+                    el2:'Wykonanie Planu',
+                    el3:'Przygotowanie do funding challenge',
                 }
         },
         {no:7, title: 'Dodatkowe',icon:'bi bi-search',
             content:
                 {
-                    el1:'13',
-                    el2:'14',
-                    el3:'15',
+                    el1:'Słownik pojęć',
+                    el2:'Programy',
+                    el3:'Dziennik zagrań',
                 }
         },
     ]
 
     return (
-        <div className='justify-content-md-center align-items-center m-2  w-75'>
+        <div className='justify-content-center font-monospace align-items-center m-2  w-75'>
         {
             objMaterials.map((item) => 
                 <a href={'#'+item.title}
-                    className='d-flex flex-wrap flex-column border border-secondary text-secondary m-2 p-2 animScale rounded justify-content-left text-decoration-none' 
+                    className='d-flex flex-wrap flex-column animScale border border-secondary text-secondary m-2 p-2 justify-content-left text-decoration-none' 
                     type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapser"
                     key={item.no}>
                     <div className='d-flex flex-row justify-content-left align-items-center'>
@@ -89,7 +102,7 @@ const MaterialItems = (props) => {
                         <div className='d-flex flex-column justify-content-left align-items-start m-2 p-2'>
                             
                             {Object.values(item.content).map((el)=>
-                                <div className='d-flex flex-row justify-content-left' key={el}>
+                                <div className='d-flex flex-row justify-content-left animScale' key={el}>
                                  <i className='m-1 bi bi-folder'></i>
                                  <p className='m-1 text-start'>{el}</p>
                                 </div>
