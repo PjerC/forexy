@@ -8,7 +8,7 @@ const MaterialItems = (props) => {
             content:
                 {
                     el1:'Forex, waluty, pary walutowe, wykres',
-                    el2:'Broker, schemat ideologiczny, schemat przepływu danych, przykładowe aplikacje',
+                    el2:'Broker, schematy, aplikacje',
                     el3:'Podział sesji, sesje z największym obrotem, sesje z umiarkowanym obrotem, sesje przed i po zamknięciu rynku',
                     el4:'Poradnik podstaw pdf'
                 }
@@ -19,7 +19,7 @@ const MaterialItems = (props) => {
                     el1:'Poradnik tworzenia konta demo',
                     el2:'Poradnik obsługi cTrader',
                     el3:'Poradnik obsługi MetaTrader 4',
-                    el4:'TradingView - vid',
+                    el4:'TradingView video',
                     el5:'Poradnik obsługi TradingView',
                     el6:'Podpinanie MyFxBook pod konto'
                 }
@@ -69,8 +69,8 @@ const MaterialItems = (props) => {
         {no:6, title: 'Mentoring',icon:'bi bi-journal-bookmark',
             content:
                 {
-                    el1:'Plan',
-                    el2:'Wykonanie Planu',
+                    el1:'Wymagania',
+                    el2:'Plan',
                     el3:'Przygotowanie do funding challenge',
                 }
         },

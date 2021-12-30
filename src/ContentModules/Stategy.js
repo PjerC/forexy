@@ -12,13 +12,10 @@ const Strategy = (props) => {
     const [visibilityStrategyTrendline,setVisibilityStrategyTrendline] = useState(false);
     const [visibilityStrategyItems,setVisibilityStrategyItems] = useState(true);
   //  const [visibilityStrategyPreview,setVisibilityStrategyPreview] = useState(true);
-    // state data to preview strategy text
-    const {setPreviewText} = props;
 
     return ( 
         <div className='d-flex w-100 justify-content-center align-items-center flex-grow-1 '>
-            {visibilityStrategyItems && <StrategyItems 
-                                                        setPreviewText={setPreviewText} 
+            {visibilityStrategyItems && <StrategyItems  
                                                         setVisibilityStrategyItems={setVisibilityStrategyItems} 
                                                         setVisibilityStrategyFibo={setVisibilityStrategyFibo}
                                                         setVisibilityStrategyTrendline={setVisibilityStrategyTrendline}
