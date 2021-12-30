@@ -15,9 +15,16 @@ const Strategy = (props) => {
         {selector:'I', description: '1.Linie Ema & Sma',previewImgUrl: imgEmaSma,
             preview:
             {
-                txt1:'Określanie trendu przy użyciu ema200',
-                txt2:'Wykorzystanie sma5 do utrzymywaia pozycji profitowych',
-                txt3:'Otwieranie pozycji według przecięcia linii',
+                txt1:'Linie ma, ema, wma',
+                txt2:'Na czym polega strategia linii ema',
+                txt3:'Dostosowywanie stop loss i take profit',
+                txt4:'Prowadzenie otwartych pozycji',
+                txt5:'Ema 200',
+                txt6:'Gra z trendem',
+                txt7:'Konsolidacja',
+                txt8:'Linie ema w TradingView',
+                txt9:'cTrader',
+                txt10:'Podsumowanie'
             }
         },
         {selector:'II', description: '2.Linie Trendu',previewImgUrl: imgTrendline,
@@ -70,7 +77,14 @@ const Strategy = (props) => {
                 txt5:'Nieprawidłowe dywergencje'
             }
         },
-        {selector:'VII', description: '7.Zniesienie Fibonacci',previewImgUrl: imgFib,
+        {selector:'VII', description: '7.Supply & Demand',previewImgUrl: imgFib,
+            preview:
+            {
+                txt1:'Strefy Supply',
+                txt2:'Strefy Demand',
+            }
+        },
+        {selector:'VIII', description: '8.Zniesienie Fibonacci',previewImgUrl: imgFib,
             preview:
             {
                 txt1:'Poziomy zniesień',
@@ -80,7 +94,7 @@ const Strategy = (props) => {
                 txt5:'Take profit i stop loss według nastaw Fibonacci'
             }
         },
-        {selector:'VIII', description: '8.Strategia',previewImgUrl: '',
+        {selector:'IX', description: '9.Strategia',previewImgUrl: '',
             preview:
             {
                 txt1:'Wykorzystywanie strategii do potwierdzeń',

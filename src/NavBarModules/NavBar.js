@@ -17,7 +17,7 @@ return(
                 <a href="#offcanvaser" className="btn btn-lg bg-dark navBarBtn shadow-none border border-secondary text-secondary m-1 bg-transparent" type="button" data-bs-toggle="offcanvas" aria-expanded="false" aria-controls="collapser">
                     <i className="bi bi-list" ></i></a>
                     
-                <div id="offcanvaser" className='d-flex p-1  border border-secondary  horizontal-width-10 offcanvas offcanvas-start' tabIndex="-1" aria-labelledby="offcanvas1">
+                <div id="offcanvaser" className='d-flex p-1 border border-secondary  horizontal-width-10 offcanvas offcanvas-start' tabIndex="-1" aria-labelledby="offcanvas1">
                 <div className="offcanvas-header">
                     <h5 className='offcanvas-title fw-bold '><i className="bi bi-cash-coin"></i> Robie Piniondz </h5>
                 </div>
