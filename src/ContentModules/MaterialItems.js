@@ -32,9 +32,10 @@ const MaterialItems = (props) => {
                     el3:'Schematy',
                     el4:'Price action',
                     el5:'Wsparcia i opory',
-                    el6:'Dywergencje',
-                    el7:'Zniesienie Fibonacci',
-                    el8:'Wydarzenia'
+                    el6:'Supply i Demand',
+                    el7:'Dywergencje',
+                    el8:'Zniesienie Fibonacci',
+                    el9:'Wydarzenia'
                 }
         },
         {no:4, title: 'Wydarzenia', icon:'bi bi-tornado',

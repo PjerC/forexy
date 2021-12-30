@@ -67,7 +67,14 @@ const Strategy = (props) => {
                 txt4:'Poziomy psychologiczne'
             }
         },
-        {selector:'VI', description: '6.Dywergencje',previewImgUrl: imgDiv,
+        {selector:'VI', description: '6.Supply & Demand',previewImgUrl: imgFib,
+            preview:
+            {
+                txt1:'Strefy Supply',
+                txt2:'Strefy Demand',
+            }
+        },
+        {selector:'VII', description: '7.Dywergencje',previewImgUrl: imgDiv,
             preview:
             {
                 txt1:'Wskaźnik rsi',
@@ -75,13 +82,6 @@ const Strategy = (props) => {
                 txt3:'Dywergencja w kanale wykupienia',
                 txt4:'Dywergencja w kanale wyprzedania',
                 txt5:'Nieprawidłowe dywergencje'
-            }
-        },
-        {selector:'VII', description: '7.Supply & Demand',previewImgUrl: imgFib,
-            preview:
-            {
-                txt1:'Strefy Supply',
-                txt2:'Strefy Demand',
             }
         },
         {selector:'VIII', description: '8.Zniesienie Fibonacci',previewImgUrl: imgFib,
